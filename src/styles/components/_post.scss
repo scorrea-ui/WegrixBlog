@@ -91,7 +91,9 @@
 
   &__card {
     margin-bottom: 3rem;
-    & img {
+    & img,
+    &__img,
+    & .gatsby-image-wrapper {
       border-radius: 1.2rem 1.2rem 0 0;
       max-height: 25.1rem;
       object-fit: cover;
