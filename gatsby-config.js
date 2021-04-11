@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Wegrix Blog',
     description: 'This is where I write my thoughts.',
+    siteUrl: 'www.https://elated-almeida-5bd156.netlify.app/'
   },
   plugins: [
     {
