@@ -18,7 +18,6 @@ const Post = ({
 }) => {
   const rawCopy = JSON.parse(blogPostContent.raw).content
   const image = getImage(blogPostImage)
-  console.log(rawCopy)
 
   return (
     <div className='o-grid__col u-3/12 u-mr32'>
@@ -31,7 +30,11 @@ const Post = ({
         <div className='c-post__card'>
           <Link to={`/blog/${slug}`}>
             <div className='c-post__center'>
-              <GatsbyImage image={image} alt={pageTitle} />
+              <GatsbyImage
+                className='c-post__img'
+                image={image}
+                alt={pageTitle}
+              />
             </div>
             <div className='c-post__wrapper'>
               <div className='c-post__details'>

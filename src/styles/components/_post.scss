@@ -49,7 +49,9 @@
       margin-bottom: 1.8rem;
     }
 
-    & img {
+    & img,
+    &__img,
+    & .gatsby-image-wrapper {
       max-width: 100%;
       max-width: 60rem;
       max-height: 40rem;
