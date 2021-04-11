@@ -1,0 +1,22 @@
+.c-posts {
+  font-size: 3.2rem;
+  font-family: $apercu;
+
+  &__title {
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    max-width: 44.8rem;
+    margin-bottom: 5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 2.5rem;
+      min-width: 30rem;
+      height: 0.2rem;
+      background-color: $red;
+    }
+  }
+}

@@ -1,50 +1,63 @@
 module.exports = {
   siteMetadata: {
-    title: "Wegrix Blog",
+    title: 'Wegrix Blog',
+    description: 'This is where I write my thoughts.',
   },
   plugins: [
     {
-      resolve: "gatsby-source-contentful",
+      resolve: 'gatsby-source-contentful',
       options: {
-        accessToken: "U5PTfI-yr6QvuEPsJme_cs3FKQFZRR04yr3qvT7gaKo",
-        spaceId: "",
+        accessToken: 'U5PTfI-yr6QvuEPsJme_cs3FKQFZRR04yr3qvT7gaKo',
+        spaceId: 'ib0v73r0as9e',
       },
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-image",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-image',
+    'gatsby-plugin-fontawesome-css',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        trackingId: "G-JH6DPST656",
+        once: true,
+        disable: false, // Flag for disabling animations
+        selector: '[data-sal]',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        icon: "src/images/icon.png",
+        trackingId: 'G-JH6DPST656',
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "images",
-        path: "./src/images/",
+        icon: 'src/images/icon.png',
       },
-      __key: "images",
+    },
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
   ],
-};
+}

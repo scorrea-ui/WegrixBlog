@@ -1,0 +1,12 @@
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+}

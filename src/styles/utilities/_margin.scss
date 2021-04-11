@@ -1,0 +1,15 @@
+.u-m {
+  &r {
+    &16 {
+      margin-right: 1.6rem;
+    }
+
+    &32 {
+      margin-right: 3.2rem;
+    }
+  }
+
+  &auto {
+    margin: 0 auto;
+  }
+}

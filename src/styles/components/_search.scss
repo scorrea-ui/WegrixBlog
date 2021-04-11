@@ -1,0 +1,53 @@
+.c-search {
+  margin-bottom: 5rem;
+
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+    & svg {
+      position: absolute;
+      top: calc(50% - 1.8rem);
+      right: 0.5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__title {
+    font-family: $apercu;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 1.22;
+  }
+
+  &__bar {
+    font-family: $apercu;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    color: #62535b;
+    font-weight: 500;
+    padding: 0 0.5rem 0.95rem 0.5rem;
+    border: none;
+    border-bottom: 0.18rem solid $black;
+    min-width: 26.9rem;
+
+    &::placeholder {
+      color: #62535b;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $red;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration,
+    &::-ms-reveal,
+    &::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+}
